@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // MODAL CARDS
             'modal-cartes-title': 'Card Game (Exam)',
-            'modal-cartes-obj': 'This project was carried out during a <strong>first-year Bachelor exam</strong>. The constraint was strong: we had only <strong>3 hours</strong> to faithfully reproduce an interactive card game from an imposed mockup. I had to manage time pressure while delivering clean and functional HTML/CSS/JS code.',
+            'modal-cartes-obj': 'This project was carried out during a <strong>first-year Bachelor exam</strong>. The constraint was strong: we had only <strong>3 hours</strong> to faithfully reproduce an interactive card game presentation interface based on a provided mockup. I had to manage time pressure while delivering clean and functional HTML/CSS/JS code.',
             'modal-cartes-cap1-title': '1. The Game Rules',
             'modal-cartes-cap1-desc': 'As this is an unofficial school project, I used "Lorem Ipsum" to simulate the rules text. The goal here was to show my ability to layout a complex textual section.',
             'modal-cartes-cap2-title': '2. "What\'s in the box?"',
