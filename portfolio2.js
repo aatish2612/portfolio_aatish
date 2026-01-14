@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'footer-text': '// Fin du document. &copy; 2025 Aatish ASHOKKUMAR LAMIRAND.',
             'modal-obj-title': 'Contexte et Objectif',
             'btn-see-site': 'Voir le site en ligne',
-            'btn-play-game': 'Jouer au jeu',
+            'btn-play-game': 'Voir le jeu',
             'btn-see-pdf': 'Voir le Dossier PDF',
             
             // MODALE BIRYANI
@@ -71,14 +71,14 @@ document.addEventListener('DOMContentLoaded', () => {
             // MODALE KOLLYWOOD
             'modal-kolly-title': 'Projet : Kollywood Party',
             'modal-kolly-obj': 'Aujourd\'hui, je travaille sur un <strong>projet personnel ambitieux</strong> : créer un jeu et une plateforme pour les fans du cinéma Tamoul (Kollywood). C\'est un double défi pour moi : d\'abord par passion pour ce cinéma, mais surtout pour <strong>prouver à mes futurs clients</strong> que je maîtrise les langages web (HTML, CSS, JS) et que je suis capable de mener un projet complexe de A à Z.',
-            'modal-kolly-cap1-title': '1. Concept & Recherche',
-            'modal-kolly-cap1-desc': 'Phase d\'analyse des besoins des fans de cinéma Tamoul (À venir).',
+            'modal-kolly-cap1-title': '1. Concept du jeu',
+            'modal-kolly-cap1-desc': '(À venir).',
             'modal-kolly-cap2-title': '2. Design UI/UX',
-            'modal-kolly-cap2-desc': 'Création des maquettes pour une expérience utilisateur fluide (À venir).',
-            'modal-kolly-cap3-title': '3. Développement',
-            'modal-kolly-cap3-desc': 'Intégration et codage des fonctionnalités principales (À venir).',
-            'modal-kolly-cap4-title': '4. Lancement',
-            'modal-kolly-cap4-desc': 'Mise en ligne et évolution de la plateforme (À venir).',
+            'modal-kolly-cap2-desc': '(À venir).',
+            'modal-kolly-cap3-title': '3. Artistes',
+            'modal-kolly-cap3-desc': '(À venir).',
+            'modal-kolly-cap4-title': '4. Pourquoi ce jeu ?',
+            'modal-kolly-cap4-desc': '(À venir).',
         },
         'en': {
             'nav-home': '[home]',
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'footer-text': '// End of document. &copy; 2025 Aatish ASHOKKUMAR LAMIRAND.',
             'modal-obj-title': 'Context and Objective',
             'btn-see-site': 'See live site',
-            'btn-play-game': 'Play the game',
+            'btn-play-game': 'See game',
             'btn-see-pdf': 'See PDF File',
 
             // MODAL BIRYANI
@@ -149,14 +149,14 @@ document.addEventListener('DOMContentLoaded', () => {
             // MODAL KOLLYWOOD
             'modal-kolly-title': 'Project: Kollywood Party',
             'modal-kolly-obj': 'Today, I am working on an <strong>ambitious personal project</strong>: creating a game and platform for fans of Tamil cinema (Kollywood). It is a double challenge for me: first out of passion for this cinema, but above all to <strong>prove to my future clients</strong> that I master web languages (HTML, CSS, JS) and that I am capable of leading a complex project from A to Z.',
-            'modal-kolly-cap1-title': '1. Concept & Research',
-            'modal-kolly-cap1-desc': 'Analysis phase of Tamil cinema fan needs (Coming soon).',
+            'modal-kolly-cap1-title': '1. Concept of the game',
+            'modal-kolly-cap1-desc': '(Coming soon).',
             'modal-kolly-cap2-title': '2. UI/UX Design',
-            'modal-kolly-cap2-desc': 'Creation of mockups for a fluid user experience (Coming soon).',
-            'modal-kolly-cap3-title': '3. Development',
-            'modal-kolly-cap3-desc': 'Integration and coding of main features (Coming soon).',
-            'modal-kolly-cap4-title': '4. Launch',
-            'modal-kolly-cap4-desc': 'Platform launch and evolution (Coming soon).',
+            'modal-kolly-cap2-desc': '(Coming soon).',
+            'modal-kolly-cap3-title': '3. Artists',
+            'modal-kolly-cap3-desc': '(Coming soon).',
+            'modal-kolly-cap4-title': '4. Why this game?',
+            'modal-kolly-cap4-desc': '(Coming soon).',
         }
     };
 

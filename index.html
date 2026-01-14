@@ -1,355 +1,518 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mon Portfolio</title>
-    
-    <link rel="stylesheet" href="portfolio2.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
 
-    <canvas id="matrix-canvas"></canvas> 
-    
+    <link rel="stylesheet" href="portfolio2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas id="matrix-canvas"></canvas>
+
     <header class="main-header">
-        <div class="terminal-header">
-            <div class="header-left">
-                <div class="terminal-buttons">
-                    <span class="btn-dot red"></span>
-                    <span class="btn-dot yellow"></span>
-                    <span class="btn-dot green"></span>
-                </div>
-                <span>Aatish — Portfolio</span>
-            </div>
-            
-            <div class="header-right">
-                <button id="lang-toggle" class="lang-btn">[en]</button>
+      <div class="terminal-header">
+        <div class="header-left">
+          <div class="terminal-buttons">
+            <span class="btn-dot red"></span>
+            <span class="btn-dot yellow"></span>
+            <span class="btn-dot green"></span>
+          </div>
+          <span>Aatish — Portfolio</span>
+        </div>
 
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="#" data-lang="nav-home">[accueil]</a></li>
-                        <li><a href="#about" data-lang="nav-bio">[bio]</a></li>
-                        <li><a href="#parcours" data-lang="nav-cursus">[cursus]</a></li>
-                        <li><a href="#projects" data-lang="nav-projects">[projets]</a></li>
-                        <li><a href="#skills" data-lang="nav-skills">[competences]</a></li>
-                        <li><a href="#contact" data-lang="nav-contact">[contact]</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="header-right">
+          <button id="lang-toggle" class="lang-btn">[en]</button>
+
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#" data-lang="nav-home">[accueil]</a></li>
+              <li><a href="#about" data-lang="nav-bio">[bio]</a></li>
+              <li><a href="#parcours" data-lang="nav-cursus">[cursus]</a></li>
+              <li>
+                <a href="#projects" data-lang="nav-projects">[projets]</a>
+              </li>
+              <li>
+                <a href="#skills" data-lang="nav-skills">[competences]</a>
+              </li>
+              <li><a href="#contact" data-lang="nav-contact">[contact]</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="terminal-body">
-            <h1><span class="prompt">> </span><span id="typing-effect"></span></h1>
-        </div>
+      </div>
+      <div class="terminal-body">
+        <h1><span class="prompt">> </span><span id="typing-effect"></span></h1>
+      </div>
     </header>
 
     <section id="about" class="content-section">
-        <div class="section-header">
-            <h2 data-lang="section-bio">[bio.txt]</h2>
+      <div class="section-header">
+        <h2 data-lang="section-bio">[bio.txt]</h2>
+      </div>
+      <div class="about-content">
+        <img
+          src="Aatish_Photo-removebg-preview.png"
+          alt="Photo de Aatish"
+          class="profile-pic"
+        />
+        <div class="about-text">
+          <p data-lang="bio-text">
+            <br />Étudiant en 2ème année de développement web, je passe le plus
+            clair de mon temps à donner vie à des idées avec du HTML, du CSS et
+            WordPress. Mon clavier est mon meilleur allié pour construire des
+            sites web de A à Z. <br />
+            <br />Quand je ne suis pas en train de coder, il y a de fortes
+            chances que je sois plongé dans un film. Je suis le genre de
+            personne qui peut analyser une scène culte avec autant de passion
+            qu'une ligne de code... tout en cherchant le meilleur spot de
+            burgers en ville. <br />
+            <br />Sérieux mais toujours décontracté, je suis à la recherche de
+            ma prochaine aventure : que ce soit une alternance pour ma 3ème
+            année, des missions en freelance, ou à plus long terme, un poste
+            d'expert HTML/CSS ou WordPress. <br />
+          </p>
         </div>
-        <div class="about-content">
-            <img src="Aatish_Photo-removebg-preview.png" alt="Photo de Aatish" class="profile-pic">
-            <div class="about-text">
-                <p data-lang="bio-text">
-                    <br>Étudiant en 2ème année de développement web, je passe le plus clair de mon temps à donner vie à des idées avec du HTML, du CSS et WordPress. Mon clavier est mon meilleur allié pour construire des sites web de A à Z. <br>
-                    <br>Quand je ne suis pas en train de coder, il y a de fortes chances que je sois plongé dans un film. Je suis le genre de personne qui peut analyser une scène culte avec autant de passion qu'une ligne de code... tout en cherchant le meilleur spot de burgers en ville. <br>
-                    <br>Sérieux mais toujours décontracté, je suis à la recherche de ma prochaine aventure : que ce soit une alternance pour ma 3ème année, des missions en freelance, ou à plus long terme, un poste d'expert HTML/CSS ou WordPress. <br>
-                </p>
-            </div>
-        </div>
+      </div>
     </section>
 
     <section id="parcours" class="content-section">
-        <div class="section-header">
-            <h2 data-lang="section-cursus">[cursus.log]</h2>
-        </div>
-        <ul class="timeline">
-            <li>
-                <strong data-lang="cursus-date-1">2025 - 2027 (En cours)</strong>
-                <span data-lang="cursus-desc-1">2ème Année [Bachelor Développement Web] à [.Decode - Paris] - <i>En recherche d'alternance pour la 3e année</i></span>
-            </li>
-            <li>
-                <strong>2023 - 2024</strong>
-                <span data-lang="cursus-desc-2">1ère Année [BUT - GEII] à [IUT de Cergy-Pontoise]</span>
-            </li>
-            <li>
-                <strong>2020 - 2023</strong>
-                <span data-lang="cursus-desc-3">Obtention du Baccalauréat [STI2D]</span>
-            </li>
-        </ul>
+      <div class="section-header">
+        <h2 data-lang="section-cursus">[cursus.log]</h2>
+      </div>
+      <ul class="timeline">
+        <li>
+          <strong data-lang="cursus-date-1">2025 - 2027 (En cours)</strong>
+          <span data-lang="cursus-desc-1"
+            >2ème Année [Bachelor Développement Web] à [.Decode - Paris] -
+            <i>En recherche d'alternance pour la 3e année</i></span
+          >
+        </li>
+        <li>
+          <strong>2023 - 2024</strong>
+          <span data-lang="cursus-desc-2"
+            >1ère Année [BUT - GEII] à [IUT de Cergy-Pontoise]</span
+          >
+        </li>
+        <li>
+          <strong>2020 - 2023</strong>
+          <span data-lang="cursus-desc-3"
+            >Obtention du Baccalauréat [STI2D]</span
+          >
+        </li>
+      </ul>
     </section>
 
     <section id="projects" class="content-section">
-        <div class="section-header">
-            <h2 data-lang="section-projets">[./projets/]</h2>
+      <div class="section-header">
+        <h2 data-lang="section-projets">[./projets/]</h2>
+      </div>
+      <div class="project-grid">
+        <div class="project-card" data-modal="modal-biryani">
+          <img src="Couverture_Biryani.png" alt="Aperçu Biryani" />
+          <h3>projet-biryani.html</h3>
+          <p data-lang="card-desc-biryani">
+            Développement d'un site sur un plat indien au lycée.
+          </p>
+          <span class="click-info" data-lang="click-info"
+            >Cliquez pour voir les détails >_</span
+          >
         </div>
-        <div class="project-grid">
 
-            <div class="project-card" data-modal="modal-biryani">
-                <img src="Couverture_Biryani.png" alt="Aperçu Biryani">
-                <h3>projet-biryani.html</h3>
-                <p data-lang="card-desc-biryani">Développement d'un site sur un plat indien au lycée.</p>
-                <span class="click-info" data-lang="click-info">Cliquez pour voir les détails >_</span>
-            </div>
-
-            <div class="project-card" data-modal="modal-cartes">
-                <img src="Couverture_Carte.png" alt="Aperçu Cartes">
-                <h3>projet-carte</h3>
-                <p data-lang="card-desc-cartes">Développement d'un site sur un jeu de cartes.</p>
-                <span class="click-info" data-lang="click-info">Cliquez pour voir les détails >_</span>
-            </div>
-            
-            <div class="project-card" data-modal="modal-cookie">
-                <img src="Capture d’écran cookie logo.png" alt="Aperçu Cookie">
-                <h3 data-lang="card-title-cookie">Identité visuelle</h3>
-                <p data-lang="card-desc-cookie">Création d'identité visuelle pour une cookiterie.</p>
-                <span class="click-info" data-lang="click-info">Cliquez pour voir les détails >_</span>
-            </div>
-            
-            <div class="project-card" data-modal="modal-univ">
-                <img src="couverture_kolly.png" alt="Aperçu Université">
-                <h3>projet-kollywood-party</h3>
-                <p data-lang="card-desc-kolly">Mon projet personnel en cours....</p>
-                <span class="click-info" data-lang="click-info">Cliquez pour voir les détails >_</span>
-            </div>
-
+        <div class="project-card" data-modal="modal-cartes">
+          <img src="Couverture_Carte.png" alt="Aperçu Cartes" />
+          <h3>projet-carte</h3>
+          <p data-lang="card-desc-cartes">
+            Développement d'un site sur un jeu de cartes.
+          </p>
+          <span class="click-info" data-lang="click-info"
+            >Cliquez pour voir les détails >_</span
+          >
         </div>
+
+        <div class="project-card" data-modal="modal-cookie">
+          <img src="Capture d’écran cookie logo.png" alt="Aperçu Cookie" />
+          <h3 data-lang="card-title-cookie">Identité visuelle</h3>
+          <p data-lang="card-desc-cookie">
+            Création d'identité visuelle pour une cookiterie.
+          </p>
+          <span class="click-info" data-lang="click-info"
+            >Cliquez pour voir les détails >_</span
+          >
+        </div>
+
+        <div class="project-card" data-modal="modal-univ">
+          <img src="couverture_kolly.png" alt="Aperçu Université" />
+          <h3>projet-kollywood-party</h3>
+          <p data-lang="card-desc-kolly">Mon projet personnel en cours....</p>
+          <span class="click-info" data-lang="click-info"
+            >Cliquez pour voir les détails >_</span
+          >
+        </div>
+      </div>
     </section>
 
     <section id="skills" class="content-section">
-        <div class="section-header">
-            <h2 data-lang="section-skills">[./competences/]</h2>
+      <div class="section-header">
+        <h2 data-lang="section-skills">[./competences/]</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-icon"><img src="html-5.png" alt="HTML5" /></div>
+        <div class="skill-icon"><img src="css-3.png" alt="CSS3" /></div>
+        <div class="skill-icon">
+          <img src="script-java.png" alt="JavaScript" />
         </div>
-        <div class="skills-grid">
-            <div class="skill-icon"><img src="html-5.png" alt="HTML5"></div>
-            <div class="skill-icon"><img src="css-3.png" alt="CSS3"></div>
-            <div class="skill-icon"><img src="script-java.png" alt="JavaScript"></div>
-            <div class="skill-icon"><img src="wordpress.png" alt="Wordpress"></div>
-            <div class="skill-icon"><img src="chatgpt.png" alt="ChatGPT"></div>
-            <div class="skill-icon"><img src="gemini-color.png" alt="Gemini"></div>
-            <div class="skill-icon"><img src="adobe.png" alt="Adobe"></div>
-            <div class="skill-icon"><img src="illustrateur.png" alt="Illustrator"></div>
-            <div class="skill-icon"><img src="canva-icon-logo.png" alt="Canva"></div>
+        <div class="skill-icon">
+          <img src="wordpress.png" alt="Wordpress" />
         </div>
+        <div class="skill-icon"><img src="chatgpt.png" alt="ChatGPT" /></div>
+        <div class="skill-icon">
+          <img src="gemini-color.png" alt="Gemini" />
+        </div>
+        <div class="skill-icon"><img src="adobe.png" alt="Adobe" /></div>
+        <div class="skill-icon">
+          <img src="illustrateur.png" alt="Illustrator" />
+        </div>
+        <div class="skill-icon">
+          <img src="canva-icon-logo.png" alt="Canva" />
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="content-section">
-        <div class="section-header">
-            <h2 data-lang="section-contact">[contact.sh]</h2>
-        </div>
-        <div class="contact-body">
-            <p data-lang="contact-text">> Prêt à discuter de votre projet ou d'une opportunité ?</p>
-            <a href="mailto:aatishakshay26@gmail.com" class="contact-link">aatishakshay26@gmail.com</a>
-        </div>
+      <div class="section-header">
+        <h2 data-lang="section-contact">[contact.sh]</h2>
+      </div>
+      <div class="contact-body">
+        <p data-lang="contact-text">
+          > Prêt à discuter de votre projet ou d'une opportunité ?
+        </p>
+        <a
+          href="mailto:aatish.ashokkumar-lamirand@ecole-decode.fr"
+          class="contact-link"
+          >aatish.ashokkumar-lamirand@ecole-decode.fr</a
+        >
+      </div>
     </section>
 
     <footer>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/aatish-ashokkumar-lamirand/" target="_blank" class="skill-icon"><img src="linkedin.png" alt="LinkedIn"></a>
-            <a href="mon-cv.pdf" target="_blank" class="skill-icon"><img src="cv.png" alt="CV"></a>
-        </div>
-        <p data-lang="footer-text">// Fin du document. &copy; 2025 Aatish ASHOKKUMAR LAMIRAND.</p>
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/aatish-ashokkumar-lamirand/"
+          target="_blank"
+          class="skill-icon"
+          ><img src="linkedin.png" alt="LinkedIn"
+        /></a>
+        <a href="mon-cv.pdf" target="_blank" class="skill-icon"
+          ><img src="cv.png" alt="CV"
+        /></a>
+      </div>
+      <p data-lang="footer-text">
+        // Fin du document. &copy; 2025 Aatish ASHOKKUMAR LAMIRAND.
+      </p>
     </footer>
 
-
     <div id="modal-biryani" class="modal-overlay">
-        <div class="modal-window">
-            <button class="close-modal">&times;</button>
-            
-            <div class="modal-content-scroll">
-                <h1 class="project-main-title" data-lang="modal-biryani-title">Site Vitrine : Allo Biryani</h1>
-                
-                <div class="project-objective">
-                    <h3 data-lang="modal-obj-title">Contexte et Objectif</h3>
-                    <p data-lang="modal-biryani-obj">
-                        Ce projet a été réalisé dans le cadre d'un <strong>devoir scolaire</strong>. C'était la toute première fois que je devais utiliser concrètement du <strong>HTML et du CSS</strong> pour construire un site. 
-                        J'ai voulu profiter de cette occasion pour mettre en avant ma culture indienne, et plus particulièrement l'une des meilleures spécialités gastronomiques de mon pays : le Biryani.
-                    </p>
-                    <a href="https://aatish2612.github.io/lycee/" target="_blank" class="modal-link-btn" data-lang="btn-see-site">Voir le site en ligne</a>
-                </div>
+      <div class="modal-window">
+        <button class="close-modal">&times;</button>
 
-                <hr class="separator">
+        <div class="modal-content-scroll">
+          <h1 class="project-main-title" data-lang="modal-biryani-title">
+            Site Vitrine : Allo Biryani
+          </h1>
 
-                <div class="project-gallery">
-                    <div class="gallery-item">
-                        <img src="capture_biryani_home.png" alt="Page Accueil">
-                        <div class="gallery-text">
-                            <h4 data-lang="modal-biryani-cap1-title">1. La Page Home</h4>
-                            <p data-lang="modal-biryani-cap1-desc">La page d'accueil sert d'introduction visuelle. J'ai voulu qu'elle soit accueillante avec un visuel fort pour donner immédiatement le ton culturel et gourmand du site.</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="capture_biryani_about.png" alt="Page About">
-                        <div class="gallery-text">
-                            <h4 data-lang="modal-biryani-cap2-title">2. La Page About</h4>
-                            <p data-lang="modal-biryani-cap2-desc">Ici, je raconte l'histoire et les origines du Biryani. C'était l'exercice idéal pour apprendre à structurer des blocs de texte et aligner du contenu informatif.</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="capture_biryani_recipes.png" alt="Page Recipes">
-                        <div class="gallery-text">
-                            <h4 data-lang="modal-biryani-cap3-title">3. La Page Recipes</h4>
-                            <p data-lang="modal-biryani-cap3-desc">Le cœur du site. J'ai dû organiser la présentation des recettes, les listes d'ingrédients et les étapes de préparation pour que ce soit clair et lisible.</p>
-                        </div>
-                    </div>
-                </div>
+          <div class="project-objective">
+            <h3 data-lang="modal-obj-title">Contexte et Objectif</h3>
+            <p data-lang="modal-biryani-obj">
+              Ce projet a été réalisé dans le cadre d'un
+              <strong>devoir scolaire</strong>. C'était la toute première fois
+              que je devais utiliser concrètement du
+              <strong>HTML et du CSS</strong> pour construire un site. J'ai
+              voulu profiter de cette occasion pour mettre en avant ma culture
+              indienne, et plus particulièrement l'une des meilleures
+              spécialités gastronomiques de mon pays : le Biryani.
+            </p>
+            <a
+              href="https://aatish2612.github.io/lycee/"
+              target="_blank"
+              class="modal-link-btn"
+              data-lang="btn-see-site"
+              >Voir le site en ligne</a
+            >
+          </div>
+
+          <hr class="separator" />
+
+          <div class="project-gallery">
+            <div class="gallery-item">
+              <img src="capture_biryani_home.png" alt="Page Accueil" />
+              <div class="gallery-text">
+                <h4 data-lang="modal-biryani-cap1-title">1. La Page Home</h4>
+                <p data-lang="modal-biryani-cap1-desc">
+                  La page d'accueil sert d'introduction visuelle. J'ai voulu
+                  qu'elle soit accueillante avec un visuel fort pour donner
+                  immédiatement le ton culturel et gourmand du site.
+                </p>
+              </div>
             </div>
+            <div class="gallery-item">
+              <img src="capture_biryani_about.png" alt="Page About" />
+              <div class="gallery-text">
+                <h4 data-lang="modal-biryani-cap2-title">2. La Page About</h4>
+                <p data-lang="modal-biryani-cap2-desc">
+                  Ici, je raconte l'histoire et les origines du Biryani. C'était
+                  l'exercice idéal pour apprendre à structurer des blocs de
+                  texte et aligner du contenu informatif.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="capture_biryani_recipes.png" alt="Page Recipes" />
+              <div class="gallery-text">
+                <h4 data-lang="modal-biryani-cap3-title">3. La Page Recipes</h4>
+                <p data-lang="modal-biryani-cap3-desc">
+                  Le cœur du site. J'ai dû organiser la présentation des
+                  recettes, les listes d'ingrédients et les étapes de
+                  préparation pour que ce soit clair et lisible.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div id="modal-cartes" class="modal-overlay">
-        <div class="modal-window">
-            <button class="close-modal">&times;</button>
-            
-            <div class="modal-content-scroll">
-                <h1 class="project-main-title" data-lang="modal-cartes-title">Jeu de Cartes (Partiel)</h1>
-                
-                <div class="project-objective">
-                    <h3 data-lang="modal-obj-title">Contexte et Objectif</h3>
-                    <p data-lang="modal-cartes-obj">
-                        Ce projet a été réalisé lors d'un <strong>partiel de ma première année de Bachelor</strong>. 
-                        La contrainte était forte : nous avions seulement <strong>3 heures</strong> pour reproduire fidèlement un jeu de cartes interactif à partir d'une maquette imposée. 
-                        Il fallait gérer la pression du temps tout en livrant un code HTML/CSS/JS propre et fonctionnel.
-                    </p>
-                    <a href="https://aatish2612.github.io/jeu_de_carte/" target="_blank" class="modal-link-btn" data-lang="btn-play-game">Jouer au jeu</a>
-                </div>
+      <div class="modal-window">
+        <button class="close-modal">&times;</button>
 
-                <hr class="separator">
+        <div class="modal-content-scroll">
+          <h1 class="project-main-title" data-lang="modal-cartes-title">
+            Jeu de Cartes (Partiel)
+          </h1>
 
-                <div class="project-gallery">
-                    <div class="gallery-item">
-                        <img src="capture_cartes_regle.png" alt="Règles">
-                        <div class="gallery-text">
-                            <h4 data-lang="modal-cartes-cap1-title">1. Les Règles du Jeu</h4>
-                            <p data-lang="modal-cartes-cap1-desc">Comme il s'agit d'un projet scolaire non officiel, j'ai utilisé du "Lorem Ipsum" pour simuler le texte des règles. L'objectif ici était de montrer ma capacité à mettre en page une section textuelle complexe.</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="capture_cartes_contient.png" alt="Contenu Boite">
-                        <div class="gallery-text">
-                            <h4 data-lang="modal-cartes-cap2-title">2. "Que contient la boîte ?"</h4>
-                            <p data-lang="modal-cartes-cap2-desc">Réalisation de la section détaillant le matériel. Le but était de respecter scrupuleusement l'alignement et la hiérarchie visuelle de la maquette fournie lors de l'examen.</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="capture_cartes_footer.png" alt="Footer">
-                        <div class="gallery-text">
-                            <h4 data-lang="modal-cartes-cap3-title">3. Le Footer</h4>
-                            <p data-lang="modal-cartes-cap3-desc">Intégration du pied de page. Même sur un projet rapide, il était important de soigner les finitions (mentions légales, liens) pour un rendu professionnel.</p>
-                        </div>
-                    </div>
-                </div>
+          <div class="project-objective">
+            <h3 data-lang="modal-obj-title">Contexte et Objectif</h3>
+            <p data-lang="modal-cartes-obj">
+              Ce projet a été réalisé lors d'un
+              <strong>partiel de ma première année de Bachelor</strong>. La
+              contrainte était forte : nous avions seulement
+              <strong>3 heures</strong> pour reproduire fidèlement une interface
+              de présentation de jeu de cartes interactif à partir d'une
+              maquette imposée. Il fallait gérer la pression du temps tout en
+              livrant un code HTML/CSS/JS propre et fonctionnel.
+            </p>
+            <a
+              href="https://aatish2612.github.io/jeu_de_carte/"
+              target="_blank"
+              class="modal-link-btn"
+              data-lang="btn-play-game"
+              >Voir le jeu</a
+            >
+          </div>
+
+          <hr class="separator" />
+
+          <div class="project-gallery">
+            <div class="gallery-item">
+              <img src="capture_cartes_regle.png" alt="Règles" />
+              <div class="gallery-text">
+                <h4 data-lang="modal-cartes-cap1-title">
+                  1. Les Règles du Jeu
+                </h4>
+                <p data-lang="modal-cartes-cap1-desc">
+                  Comme il s'agit d'un projet scolaire non officiel, j'ai
+                  utilisé du "Lorem Ipsum" pour simuler le texte des règles.
+                  L'objectif ici était de montrer ma capacité à mettre en page
+                  une section textuelle complexe.
+                </p>
+              </div>
             </div>
+            <div class="gallery-item">
+              <img src="capture_cartes_contient.png" alt="Contenu Boite" />
+              <div class="gallery-text">
+                <h4 data-lang="modal-cartes-cap2-title">
+                  2. "Que contient la boîte ?"
+                </h4>
+                <p data-lang="modal-cartes-cap2-desc">
+                  Réalisation de la section détaillant le matériel. Le but était
+                  de respecter scrupuleusement l'alignement et la hiérarchie
+                  visuelle de la maquette fournie lors de l'examen.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="capture_cartes_footer.png" alt="Footer" />
+              <div class="gallery-text">
+                <h4 data-lang="modal-cartes-cap3-title">3. Le Footer</h4>
+                <p data-lang="modal-cartes-cap3-desc">
+                  Intégration du pied de page. Même sur un projet rapide, il
+                  était important de soigner les finitions (mentions légales,
+                  liens) pour un rendu professionnel.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div id="modal-cookie" class="modal-overlay">
-        <div class="modal-window">
-            <button class="close-modal">&times;</button>
-            
-            <div class="modal-content-scroll">
-                <h1 class="project-main-title" data-lang="modal-cookie-title">Design : La Cookiterie</h1>
-                
-                <div class="project-objective">
-                    <h3 data-lang="modal-obj-title">Contexte et Objectif</h3>
-                    <p data-lang="modal-cookie-obj">
-                        Ce projet est issu d'un <strong>devoir de design</strong> lors de ma première année de Bachelor. 
-                        La consigne était de créer de toute pièce l'identité visuelle d'une marque fictive : "La Cookiterie". 
-                        J'ai utilisé <strong>Adobe Illustrator</strong> pour concevoir le logo et décliner l'univers graphique de la marque.
-                    </p>
-                    <a href="Identité visuelle Cookiterie_ASHOKKUMAR LAMIRAND_Aatish_1AC1 PDF.pdf" target="_blank" class="modal-link-btn" data-lang="btn-see-pdf">Voir le Dossier PDF</a>
-                </div>
+      <div class="modal-window">
+        <button class="close-modal">&times;</button>
 
-                <hr class="separator">
+        <div class="modal-content-scroll">
+          <h1 class="project-main-title" data-lang="modal-cookie-title">
+            Design : La Cookiterie
+          </h1>
 
-                <div class="project-gallery">
-                    <div class="gallery-item">
-                        <img src="capture_cookie_logo_expli.png" alt="Logo">
-                        <div class="gallery-text">
-                            <h4 data-lang="modal-cookie-cap1-title">1. Création du Logo</h4>
-                            <p data-lang="modal-cookie-cap1-desc">J'ai conçu un logo en forme de cookie croqué pour l'aspect gourmand, avec une typographie manuscrite pour évoquer le côté artisanal et "fait maison".</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="capture_cookie_couleur.png" alt="Couleurs">
-                        <div class="gallery-text">
-                            <h4 data-lang="modal-cookie-cap2-title">2. Charte Graphique</h4>
-                            <p data-lang="modal-cookie-cap2-desc">Sélection d'une palette de couleurs chaudes (chocolat, biscuit, caramel) pour stimuler l'appétit et créer une ambiance chaleureuse.</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="capture_cookie_goodies.png" alt="Goodies">
-                        <div class="gallery-text">
-                            <h4 data-lang="modal-cookie-cap3-title">3. Les Goodies</h4>
-                            <p data-lang="modal-cookie-cap3-desc">Déclinaison de la marque sur des objets : Mugs personnalisés et sacs en coton (Tote bags) pour que les clients emportent l'image de marque avec eux.</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="capture_cookie_menu.png" alt="Carte Menu">
-                        <div class="gallery-text">
-                            <h4 data-lang="modal-cookie-cap4-title">4. La Carte des Menus</h4>
-                            <p data-lang="modal-cookie-cap4-desc">Mise en page de l'offre commerciale. Présentation des produits phares comme le "Nutella Dream" ou le "Speculoos Crunch" de manière attractive.</p>
-                        </div>
-                    </div>
-                </div>
+          <div class="project-objective">
+            <h3 data-lang="modal-obj-title">Contexte et Objectif</h3>
+            <p data-lang="modal-cookie-obj">
+              Ce projet est issu d'un <strong>devoir de design</strong> lors de
+              ma première année de Bachelor. La consigne était de créer de toute
+              pièce l'identité visuelle d'une marque fictive : "La Cookiterie".
+              J'ai utilisé <strong>Adobe Illustrator</strong> pour concevoir le
+              logo et décliner l'univers graphique de la marque.
+            </p>
+            <a
+              href="Identité visuelle Cookiterie_ASHOKKUMAR LAMIRAND_Aatish_1AC1 PDF.pdf"
+              target="_blank"
+              class="modal-link-btn"
+              data-lang="btn-see-pdf"
+              >Voir le Dossier PDF</a
+            >
+          </div>
+
+          <hr class="separator" />
+
+          <div class="project-gallery">
+            <div class="gallery-item">
+              <img src="capture_cookie_logo_expli.png" alt="Logo" />
+              <div class="gallery-text">
+                <h4 data-lang="modal-cookie-cap1-title">1. Création du Logo</h4>
+                <p data-lang="modal-cookie-cap1-desc">
+                  J'ai conçu un logo en forme de cookie croqué pour l'aspect
+                  gourmand, avec une typographie manuscrite pour évoquer le côté
+                  artisanal et "fait maison".
+                </p>
+              </div>
             </div>
+            <div class="gallery-item">
+              <img src="capture_cookie_couleur.png" alt="Couleurs" />
+              <div class="gallery-text">
+                <h4 data-lang="modal-cookie-cap2-title">2. Charte Graphique</h4>
+                <p data-lang="modal-cookie-cap2-desc">
+                  Sélection d'une palette de couleurs chaudes (chocolat,
+                  biscuit, caramel) pour stimuler l'appétit et créer une
+                  ambiance chaleureuse.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="capture_cookie_goodies.png" alt="Goodies" />
+              <div class="gallery-text">
+                <h4 data-lang="modal-cookie-cap3-title">3. Les Goodies</h4>
+                <p data-lang="modal-cookie-cap3-desc">
+                  Déclinaison de la marque sur des objets : Mugs personnalisés
+                  et sacs en coton (Tote bags) pour que les clients emportent
+                  l'image de marque avec eux.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="capture_cookie_menu.png" alt="Carte Menu" />
+              <div class="gallery-text">
+                <h4 data-lang="modal-cookie-cap4-title">
+                  4. La Carte des Menus
+                </h4>
+                <p data-lang="modal-cookie-cap4-desc">
+                  Mise en page de l'offre commerciale. Présentation des produits
+                  phares comme le "Nutella Dream" ou le "Speculoos Crunch" de
+                  manière attractive.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div id="modal-univ" class="modal-overlay">
-        <div class="modal-window">
-            <button class="close-modal">&times;</button>
-            
-            <div class="modal-content-scroll">
-                <h1 class="project-main-title" data-lang="modal-kolly-title">Projet : Kollywood Party</h1>
-                
-                <div class="project-objective">
-                    <h3 data-lang="modal-obj-title">Contexte et Objectif</h3>
-                    <p data-lang="modal-kolly-obj">
-                        Aujourd'hui, je travaille sur un <strong>projet personnel ambitieux</strong> : créer un jeu et une plateforme pour les fans du cinéma Tamoul (Kollywood). 
-                        C'est un double défi pour moi : d'abord par passion pour ce cinéma, mais surtout pour <strong>prouver à mes futurs clients</strong> que je maîtrise les langages web (HTML, CSS, JS) et que je suis capable de mener un projet complexe de A à Z.
-                    </p>
-                </div>
+      <div class="modal-window">
+        <button class="close-modal">&times;</button>
 
-                <hr class="separator">
+        <div class="modal-content-scroll">
+          <h1 class="project-main-title" data-lang="modal-kolly-title">
+            Projet : Kollywood Party
+          </h1>
 
-                <div class="project-gallery">
-                    <div class="gallery-item">
-                        <img src="couverture_kolly.png" alt="Concept">
-                        <div class="gallery-text"><h4 data-lang="modal-kolly-cap1-title">1. Concept du jeu</h4><p data-lang="modal-kolly-cap1-desc">(À venir).</p></div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="couverture_kolly.png" alt="Design">
-                        <div class="gallery-text"><h4 data-lang="modal-kolly-cap2-title">2. Design UI/UX</h4><p data-lang="modal-kolly-cap2-desc">(À venir).</p></div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="couverture_kolly.png" alt="Artistes">
-                        <div class="gallery-text"><h4 data-lang="modal-kolly-cap3-title">3. Artistes</h4><p data-lang="modal-kolly-cap3-desc">(À venir).</p></div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="couverture_kolly.png" alt="Pourquoi ?">
-                        <div class="gallery-text"><h4 data-lang="modal-kolly-cap4-title">4. Pourquoi ce jeu ?</h4><p data-lang="modal-kolly-cap4-desc">(À venir).</p></div>
-                    </div>
-                </div>
+          <div class="project-objective">
+            <h3 data-lang="modal-obj-title">Contexte et Objectif</h3>
+            <p data-lang="modal-kolly-obj">
+              Aujourd'hui, je travaille sur un
+              <strong>projet personnel ambitieux</strong> : créer un jeu et une
+              plateforme pour les fans du cinéma Tamoul (Kollywood). C'est un
+              double défi pour moi : d'abord par passion pour ce cinéma, mais
+              surtout pour <strong>prouver à mes futurs clients</strong> que je
+              maîtrise les langages web (HTML, CSS, JS) et que je suis capable
+              de mener un projet complexe de A à Z.
+            </p>
+          </div>
+
+          <hr class="separator" />
+
+          <div class="project-gallery">
+            <div class="gallery-item">
+              <img src="couverture_kolly.png" alt="Concept" />
+              <div class="gallery-text">
+                <h4 data-lang="modal-kolly-cap1-title">1. Concept du jeu</h4>
+                <p data-lang="modal-kolly-cap1-desc">(À venir).</p>
+              </div>
             </div>
+            <div class="gallery-item">
+              <img src="couverture_kolly.png" alt="Design" />
+              <div class="gallery-text">
+                <h4 data-lang="modal-kolly-cap2-title">2. Design UI/UX</h4>
+                <p data-lang="modal-kolly-cap2-desc">(À venir).</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="couverture_kolly.png" alt="Artistes" />
+              <div class="gallery-text">
+                <h4 data-lang="modal-kolly-cap3-title">3. Artistes</h4>
+                <p data-lang="modal-kolly-cap3-desc">(À venir).</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="couverture_kolly.png" alt="Pourquoi ?" />
+              <div class="gallery-text">
+                <h4 data-lang="modal-kolly-cap4-title">4. Pourquoi ce jeu ?</h4>
+                <p data-lang="modal-kolly-cap4-desc">(À venir).</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div id="modal-zoom" class="zoom-overlay">
-        <div class="zoom-window">
-            <button class="close-zoom">&times;</button>
-            <div class="zoom-content">
-                <img src="" alt="Zoom" class="zoom-img">
-                <div class="zoom-text-box">
-                    <h3 class="zoom-title">Titre</h3>
-                    <p class="zoom-desc">Description</p>
-                </div>
-            </div>
+      <div class="zoom-window">
+        <button class="close-zoom">&times;</button>
+        <div class="zoom-content">
+          <img src="" alt="Zoom" class="zoom-img" />
+          <div class="zoom-text-box">
+            <h3 class="zoom-title">Titre</h3>
+            <p class="zoom-desc">Description</p>
+          </div>
         </div>
+      </div>
     </div>
 
-    <script src="portfolio2.js"></script> 
-    <script src="matrix-effect.js"></script> 
-</body>
-
+    <script src="portfolio2.js"></script>
+    <script src="matrix-effect.js"></script>
+  </body>
 </html>
